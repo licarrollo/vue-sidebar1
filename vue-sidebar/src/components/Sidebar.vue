@@ -1,9 +1,8 @@
 <template>
   <div class="sidebar">
     <div class="logo">
-            <nav class="utensils"> <font-awesome-icon  icon="fa-solid fa-utensils" />  </nav>
-            <h2> foodaily </h2>
-        </div>
+        <h2> Agnes </h2>
+    </div>
     
     <div class="menu-items" >
         
@@ -56,17 +55,18 @@
             </div>
         </router-link>  
 
-</div>
+    </div>
         <div class="bottom-content">
             <li>
-          <router-link to="/logout" active-class="active" exact tag="button" class="side-btn">
-            <div class="link-container"><font-awesome-icon class="icons" icon="fa-solid fa-door-open" />
+            <router-link to="/logout" active-class="active" exact tag="button" class="side-btn">
+                <div class="link-container"><font-awesome-icon class="icons" icon="fa-solid fa-door-open" />
                     Log out
-            </div> 
-        </router-link> </li>  
+                </div> 
+            </router-link> 
+            </li>  
         </div>
     
-  </div>
+</div>
 </template>
 
 <script>
@@ -76,61 +76,51 @@ export default {
 </script>
 
 <style scoped>
-
-.icons{
-    font-size: 20px;
-    color: #C8E1D8;
-    padding-right: 10px;
-}
-    .menu-items{
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-        
-       
-    }
-    .menu-items > *{
-        margin-top: 9px;
-        
-    }
-
-    .side-btn:focus{
-        outline: none;
-    }
-    .side-btn.active{
-        background-color:  rgba(255, 255, 255, 0.2);
-        color: teal;
-        font-weight: 500;
-    }
-
-    .side-btn{
-        border: none;
-        padding: 10px 0px;
-        cursor: pointer;
-        font-size: 16px;
-        color: white;
-        text-decoration: none;
-        background-color: transparent;
-    }
-    .side-btn:hover{
-         background: rgba(255, 255, 255, 0.2);
-    border-left: 5px solid var(--font-color);
-    color: var(--font-color);
-     margin-left:0%;
-        
-    }
-    nav.logo{
+.logo{
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     margin: 15% 15% 0% 15px;
 }
-nav.utensils{
-    font-size: 50px;
-    padding-right: 20px;
-    color: white    ;
+.icons{
+    font-size: 20px;
+    color: #C8E1D8;
+    padding-right: 10px;
 }
+.menu-items{
+    display: flex;
+    flex-direction: column;   
+}
+.menu-items > *{
+    margin-top: 20px;
+        
+}
+.side-btn:focus{
+    outline: none;
+}
+.side-btn.active{
+    background-color:  rgba(255, 255, 255, 0.2);
+    color: teal;
+    font-weight: 500;
+}
+.side-btn{
+    border: none;
+    padding: 10px 0px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+.side-btn:hover{
+    background: rgba(255, 255, 255, 0.2);
+    border-left: 5px solid var(--font-color);
+    color: var(--font-color);
+    margin-left:0%;
+        
+}
+
 .link-container{
      margin-left: 20%;   
    height: 100%;
