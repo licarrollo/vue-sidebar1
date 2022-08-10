@@ -532,7 +532,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
   grid-area: Stats;
   background: gray;
   border-radius: 10px;
-  height:20rem;
+  height:23rem;
   top:20%
 
 }
@@ -557,7 +557,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
 
 .MPItems ul li{
   text-align: left;
-  padding: 15px;
+  padding: 14px;
    border-radius: 10px;
   list-style: none;
     border: none;
