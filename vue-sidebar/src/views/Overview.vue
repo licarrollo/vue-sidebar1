@@ -542,7 +542,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
   grid-area: Stats;
   background: gray;
   border-radius: 10px;
-  height:27rem;
+  height:25rem;
 }
 .Popular {
   grid-area: Popular;
