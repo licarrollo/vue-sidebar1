@@ -29,20 +29,7 @@
 
   <div class="Sales">
 <div class="mid">
-    <h2 class="over">overview</h2>
-    
-<!-- modal -->
-<!-- <button class="btn" @click="showModal = true"> Show modal</button>
-<transition name="fade" appear>
-    <div class="modal-overlay" v-if="showModal" @click="showModal = false"></div>
-</transition>
-<transition name="slide" appear>
-    <div class="modal" v-if="showModal">
-        <h1>Lorem Ipsum</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, veritatis.</p>
-        <button class="button" @click="showModal = false"> Close</button>
-    </div>
-</transition> -->
+    <h2 class="over">Overview</h2>    
 
     <div class="boxss">
                 <select>
@@ -75,7 +62,7 @@
                         <span>Avg. Order Amount</span>
                    </div>
                    <div class="second">
-                    <span>8,562<small>+2.8</small> </span>
+                    <span>$8,562<small>+2.8</small> </span>
                    </div>
                    <div class="last">
                     <small>Compared to ($56,232 last year)</small>
@@ -311,7 +298,7 @@
 grid-column: 1;
 grid-row: 1 / span 2 ;
 width: 21%;
-height: 90%;
+height: 80%;
 background: var(--primary-color) !important;
 display: flex;
 flex-direction: column;
@@ -319,12 +306,14 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
 }
 .box1 .one{
     padding: 0%;
+    padding-top: 0%;
 }
 .box1 .first{
     color: rgb(243, 246, 248, 1);
-    padding-right: 170px;
+    padding-right: 100px;
     font-size: 1rem;
-    
+    padding-top: 0%;
+    padding-bottom: 0%;
 }
 .box1 .first .file{
     font-size:150%;
@@ -335,9 +324,9 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
     color:  var(--font-color);;
     font-size: 1.2rem;
     padding-bottom: 0%;
-    padding-top: 0%;
+    padding-top: 7%;
     top: 10px;
-    padding-right: 158px;
+    padding-right: 85px;
 
 }
 .box1 .second small{ 
@@ -347,13 +336,12 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
 .box1 .last{
     color: rgb(243, 246, 248, 1);
     top: 60px;
-    padding-right: 75px;
+    padding-right: 4px;
 }
 .Sales{
   grid-area: Sales;
   position: relative;
-
-  top: 12%; 
+  top: 15%; 
   display: flex;  
   flex-direction: row;
   justify-content: space-between;
@@ -369,16 +357,16 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
     grid-column: 2;
     grid-row: 1 / span 2 ;
     width: 21%;
-    height: 90%;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    padding: 10%;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
 
 
 }
 .box2 .two{
-    padding: 5%;
+    padding: 0%;
+    padding-top: 0%;
 }
 .box2 .two .second small{
     color: orange;
@@ -386,7 +374,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
 .box2 .first{
     color: #000;
     padding: 0%;
-    padding-right: 50px;
+    padding-right: 10px;
 }
 .box2 .first .chart{
     font-size:150%;
@@ -397,7 +385,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
     font-size: 1.2rem;
     padding-bottom: 0%;
     padding-top: 5%;
-    padding-right: 158px;
+    padding-right: 170px;
 }
 .box2 .second small{ 
     color: #000;
@@ -405,13 +393,12 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
 }
 .box2 .last{
     color: #000;
-    padding-right: 55px;
 }
 .box3{
     grid-column: 3;
     grid-row: 1 / span 2 ;
     width: 21%;
-    height: 90%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     padding: 10%;
@@ -420,13 +407,14 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
 
 }
 .box3 .three{
-    padding: 5%;
+    padding: 0%;
+    padding-top: 0%;
     
 }
 .box3 .first{
     color: #000;
     padding: 0%;
-    padding-right: 60px;
+    padding-right: 10px;
 }
 .box3 .three .second small{
     color: green;
@@ -440,7 +428,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
     font-size: 1.2rem;
     padding-bottom: 0%;
     padding-top: 7%;
-    padding-right: 155px;
+    padding-right: 170px;
 }
 .box3 .second small{ 
     color: #000;
@@ -448,14 +436,13 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
 }
 .box3 .last{
     color:#000;
-    padding-right: 63px;
 }
 
 .box4{
   grid-column: 4;
   grid-row: 1 / span 2 ;
   width: 21%;
-  height: 90%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   padding: 10%;
@@ -464,7 +451,8 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
 
 }
 .box4 .four{
-    padding: 5%;
+    padding: 0%;
+    padding-top: 0%;
     
 }
 .box4 .four .second small{
@@ -476,13 +464,15 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
     padding-right: 50px;
 }
 .box4 .first .simplechart{
-    font-size:190%;
+    font-size:180%;
     padding-right: 10px;
 }
 .box4 .second{
     color: #000;
     font-size: 1.2rem;
-    padding-bottom: 5%;
+    padding-top: 7%;
+    padding-bottom: 0%;
+    padding-right: 170px;
 }
 .box4 .second small{ 
     color: #000;
@@ -493,7 +483,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
 }
 .mid{
     position: absolute;
-    top:-60%;
+    top:-62%;
     color: #000;
     left: 0;
     width: 79vw;
@@ -503,7 +493,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
 .mid .boxss{
     position: absolute;
     right: 0;
-    top:0%;
+    top:20%;
  
 }
 .mid .boxss select{
@@ -542,7 +532,9 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
   grid-area: Stats;
   background: gray;
   border-radius: 10px;
-  height:25rem;
+  height:20rem;
+  top:20%
+
 }
 .Popular {
   grid-area: Popular;
@@ -550,7 +542,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
   border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
    color: black;
-
+    height:10rem;
 }
 #most{
   margin: 0;

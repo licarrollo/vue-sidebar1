@@ -47,15 +47,16 @@ export default {
   border-radius: 20px;
     display: grid;
 grid-auto-rows: minmax(100px, auto);
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 5fr 5fr 5fr;
   grid-gap:1em;
     grid-template-areas: 
   " Header Header Header Header"
-  " Sales Sales Sales Sales" 
+  "mid mid mid mid "
+  "Sales Sales Sales Sales "
   " Stats Stats Stats Popular"
   " Stats Stats  Stats Popular"
   " Stats Stats Stats Popular"
-  " Stats Stats Stats Popular";
 }
 
 </style>
