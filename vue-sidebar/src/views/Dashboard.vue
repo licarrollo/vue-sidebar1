@@ -33,7 +33,7 @@ export default {
 
 .content{
   background: white;
-  border-radius: 40px 0px 0px 40px;
+  border-radius: 30px 0px 0px 40px;
   margin: 0px;
   width: 83.5vw;
   height:100vh;
