@@ -6,46 +6,63 @@
         </div>
     
     <div class="menu-items" >
-        <router-link to="/overview" active-class="active" exact tag="button" class="side-btn">
+    <li>   <router-link to="/overview" active-class="active" exact tag="button" class="side-btn">
             <div class="link-container"> <font-awesome-icon class="icons" icon="fa-solid fa-chart-pie" />
                     Dashboard
             </div>
-        </router-link>  
+        </router-link>  </li> 
+
+        <li> 
         <router-link to="/orders" active-class="active" exact tag="button" class="side-btn">
             <div class="link-container"> <font-awesome-icon class="icons" icon="fa-solid fa-cart-shopping" />
                     Orders
             </div>
-        </router-link>  
+        </router-link>  </li> 
+
+        <li>
         <router-link to="/promotions" active-class="active" exact tag="button" class="side-btn">
             <div class="link-container"> <font-awesome-icon class="icons" icon="fa-solid fa-tag" />
                     Promotions
             </div>
-        </router-link>  
+        </router-link>  </li> 
+
+        <li>
         <router-link to="/inventory" active-class="active" exact tag="button" class="side-btn">
             <div class="link-container"> <font-awesome-icon class="icons" icon="fa-solid fa-cube" />
                     Inventory
             </div>
         </router-link>  
+        </li> 
+        
+        <li>
         <router-link to="/business" active-class="active" exact tag="button" class="side-btn">
             <div class="link-container"> <font-awesome-icon class="icons" icon="fa-solid fa-clock" />
                     Business Hours
             </div>
         </router-link>  
+        </li> 
+        <li>
         <router-link to="/support" active-class="active" exact tag="button" class="side-btn">
             <div class="link-container"> <font-awesome-icon class="icons" icon="fa-solid fa-phone" />
                     Support
             </div>
         </router-link>  
+        </li> 
+        <li>
         <router-link to="/settings" active-class="active" exact tag="button" class="side-btn">
             <div class="link-container"><font-awesome-icon class="icons" icon="fa-solid fa-gear" />
                     Settings
             </div>
         </router-link>  
+        </li> 
+
+        <li>
           <router-link to="/logout" active-class="active" exact tag="button" class="side-btn">
             <div class="link-container"><font-awesome-icon class="icons" icon="fa-solid fa-door-open" />
                     Log out
             </div>
         </router-link>  
+        </li> 
     </div>
   </div>
 </template>
@@ -66,7 +83,8 @@ export default {
     .menu-items{
         display: flex;
         flex-direction: column;
-        margin-top: 40px;
+        margin-top: 10px;
+        
        
     }
     .menu-items > *{
