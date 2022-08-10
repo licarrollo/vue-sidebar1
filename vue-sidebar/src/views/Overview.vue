@@ -30,6 +30,7 @@
   <div class="Sales">
 <div class="mid">
     <h2 class="over">overview</h2>
+    <button class="btn-m" > Modal</button>
     <div class="boxss">
                 <select>
                   <option>Today</option>
@@ -118,6 +119,40 @@
                 </div>   
                 <div id="my_dataviz"></div>
 
+  </div>
+  <div class="Popular">
+   <h3 id="most">Most Popular Items</h3>
+                <div class="MPItems">
+                    <ul>
+                        <li>
+                           <a class="iconsearch"><font-awesome-icon icon="fa-solid fa-image" /></a>
+                            
+                                <span>Special Chicken</span>                    
+                        </li>
+                        <br>
+                       <li>
+                        <a class="iconsearch"><font-awesome-icon icon="fa-solid fa-image" /></a>
+                        <span>Chew mein</span>
+                       </li>
+                       <br>
+                       <li>
+                         <a class="iconsearch"><font-awesome-icon icon="fa-solid fa-image" /></a>
+                                <span>BBQ Park</span>
+                       </li>
+                        <br>
+                       <li>
+                         <a class="iconsearch"><font-awesome-icon icon="fa-solid fa-image" /></a>
+                                <span>BBQ Park</span>
+                       </li>
+                        <br>
+                       <li>
+                         <a class="iconsearch"><font-awesome-icon icon="fa-solid fa-image" /></a>
+                                <span>BBQ Park</span>
+                       </li>
+                  
+                     
+                    </ul>
+                </div>
   </div>
 </template>
 
@@ -270,6 +305,22 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
     top: 60px;
     padding-right: 75px;
 }
+.Sales{
+  grid-area: Sales;
+  position: relative;
+
+  top: 12%; 
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-between;
+  height: 79.9%;
+}
+.Sales div{
+    padding: 1em;
+    border-radius: 20px;
+}
+
+
 .box2{
     grid-column: 2;
     grid-row: 1 / span 2 ;
@@ -401,7 +452,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
     top:-60%;
     color: #000;
     left: 0;
-    width: 82.4vw;
+    width: 79vw;
     display: flex;
    
 }
@@ -429,4 +480,67 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
     stroke: #fff;
 }
 
+
+.Header {
+  padding: 0;
+  height: 100%;
+  grid-area: Header;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  
+}
+
+.Stats {
+  grid-area: Stats;
+  background: gray;
+  border-radius: 10px;
+}
+.Popular {
+  grid-area: Popular;
+     background:rgb(243,246,248);
+  border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   color: black;
+
+}
+#most{
+  margin: 0;
+  padding: 20px;
+}
+
+.MPItems ul{
+  
+     padding-left: 0;
+    margin: 2px 0 2px 0;
+}
+
+.MPItems ul li{
+  text-align: left;
+  padding: 15px;
+   border-radius: 10px;
+  list-style: none;
+    border: none;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+}
+.MPItems ul li .iconsearch{
+   
+    padding-right: 10px;
+  }
+.MPItems ul li:hover{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2) 
+}
+.btn-m{
+    width: 10%;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    float: right;
+    position: absolute;
+    right: 10%;
+    top:30%;
+}
 </style>

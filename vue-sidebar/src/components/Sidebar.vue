@@ -71,6 +71,7 @@ export default {
     }
     .menu-items > *{
         margin-top: 40px;
+        
     }
 
     .side-btn:focus{
@@ -107,6 +108,7 @@ export default {
 nav.utensils{
     font-size: 50px;
     padding-right: 20px;
+    color: white    ;
 }
 
 </style>
