@@ -70,7 +70,7 @@ export default {
        
     }
     .menu-items > *{
-        margin-top: 40px;
+        margin-top: 20px;
         
     }
 

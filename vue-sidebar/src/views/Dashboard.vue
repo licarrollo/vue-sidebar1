@@ -33,16 +33,17 @@ export default {
 
 .content{
   background: white;
-  border-radius: 40px 0px 0px 0px;
+  border-radius: 40px 0px 0px 40px;
   margin: 0px;
-  width: 82vw;
+  width: 83.5vw;
+  height:100vh;
+
  
 }
 .wrapper{
   margin: 10px;
 
-background: yellow;
-  height: 95vh;
+  height: 97vh;
   border-radius: 20px;
     display: grid;
 grid-auto-rows: minmax(100px, auto);

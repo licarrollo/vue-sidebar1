@@ -3,9 +3,11 @@
  
   <router-view/>
 
-
   </div>
+ 
+ 
 </template>
+
 
 <style>
 

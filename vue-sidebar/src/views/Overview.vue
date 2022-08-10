@@ -30,7 +30,20 @@
   <div class="Sales">
 <div class="mid">
     <h2 class="over">overview</h2>
-    <button class="btn-m" > Modal</button>
+    
+<!-- modal -->
+<!-- <button class="btn" @click="showModal = true"> Show modal</button>
+<transition name="fade" appear>
+    <div class="modal-overlay" v-if="showModal" @click="showModal = false"></div>
+</transition>
+<transition name="slide" appear>
+    <div class="modal" v-if="showModal">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, veritatis.</p>
+        <button class="button" @click="showModal = false"> Close</button>
+    </div>
+</transition> -->
+
     <div class="boxss">
                 <select>
                   <option>Today</option>
@@ -101,13 +114,21 @@
   <!-- end sales -->
   
   <div class="Stats">
-     <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+
         <div class="sel">
                 <span>Sales Analytics</span>
                 <div class="boxs">
+                    <button class="btn" @click="showModal = true"> Modal</button>
+<transition name="fade" appear>
+    <div class="modal-overlay" v-if="showModal" @click="showModal = false"></div>
+</transition>
+<transition name="slide" appear>
+    <div class="modal" v-if="showModal">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, veritatis.</p>
+        <button class="button" @click="showModal = false"> Close</button>
+    </div>
+</transition>
                     <select>
                       <option>This Week</option>
                       <option>Option 2</option>
@@ -120,7 +141,7 @@
                 <div id="my_dataviz"></div>
 
   </div>
-  <div class="Popular">
+<div class="Popular">
    <h3 id="most">Most Popular Items</h3>
                 <div class="MPItems">
                     <ul>
@@ -156,6 +177,29 @@
   </div>
 </template>
 
+<script>
+
+ export default {
+    name: 'App',
+    // components: {
+    //   Modal, 
+    // },
+    data() {
+      return {
+    //     isModalVisible: false,
+    //   };
+    // },
+    // methods: {
+    //   showModal() {
+    //     this.isModalVisible = true;
+    //   },
+    //   closeModal() {
+    //     this.isModalVisible = false;
+    //   }
+     showModal: false
+    }
+  }};
+</script>
 <style>
 
 /*header*/
@@ -459,6 +503,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
 .mid .boxss{
     position: absolute;
     right: 0;
+    top:0%;
  
 }
 .mid .boxss select{
@@ -497,6 +542,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
   grid-area: Stats;
   background: gray;
   border-radius: 10px;
+  height:27rem;
 }
 .Popular {
   grid-area: Popular;
@@ -532,15 +578,48 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
 .MPItems ul li:hover{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2) 
 }
-.btn-m{
-    width: 10%;
-    height: 2rem;
-    border: none;
+
+.modal{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:99;
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    border-radius:16px ;
+    padding: 25px;
+}
+.btn{
+    width: 5%;
+    height: 1.2rem;
+    border: 1px solid black;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 25px;
     float: right;
     position: absolute;
-    right: 10%;
-    top:30%;
+    right: 8%;
+    top:15.4%;
+    cursor: pointer;
+   
+}
+.modal-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index:98;
+    height: 100vh;
+    background: rgba(0, 0, 0, .3);
+}
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5;
+}
+.fade-enter,
+.fade-leave-to{
+    opacity: 0;
 }
 </style>
