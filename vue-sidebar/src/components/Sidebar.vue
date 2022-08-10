@@ -6,64 +6,66 @@
         </div>
     
     <div class="menu-items" >
-    <li>   <router-link to="/overview" active-class="active" exact tag="button" class="side-btn">
+        
+      <router-link to="/overview" active-class="active" exact tag="button" class="side-btn">
             <div class="link-container"> <font-awesome-icon class="icons" icon="fa-solid fa-chart-pie" />
                     Dashboard
             </div>
-        </router-link>  </li> 
+        </router-link>  
 
-        <li> 
+        
         <router-link to="/orders" active-class="active" exact tag="button" class="side-btn">
             <div class="link-container"> <font-awesome-icon class="icons" icon="fa-solid fa-cart-shopping" />
                     Orders
             </div>
-        </router-link>  </li> 
+        </router-link>  
 
-        <li>
+
         <router-link to="/promotions" active-class="active" exact tag="button" class="side-btn">
             <div class="link-container"> <font-awesome-icon class="icons" icon="fa-solid fa-tag" />
                     Promotions
             </div>
-        </router-link>  </li> 
+        </router-link>  
 
-        <li>
+      
         <router-link to="/inventory" active-class="active" exact tag="button" class="side-btn">
             <div class="link-container"> <font-awesome-icon class="icons" icon="fa-solid fa-cube" />
                     Inventory
             </div>
         </router-link>  
-        </li> 
         
-        <li>
+        
+      
         <router-link to="/business" active-class="active" exact tag="button" class="side-btn">
             <div class="link-container"> <font-awesome-icon class="icons" icon="fa-solid fa-clock" />
                     Business Hours
             </div>
         </router-link>  
-        </li> 
-        <li>
+        
+      
         <router-link to="/support" active-class="active" exact tag="button" class="side-btn">
             <div class="link-container"> <font-awesome-icon class="icons" icon="fa-solid fa-phone" />
                     Support
             </div>
         </router-link>  
-        </li> 
-        <li>
+        
+        
         <router-link to="/settings" active-class="active" exact tag="button" class="side-btn">
             <div class="link-container"><font-awesome-icon class="icons" icon="fa-solid fa-gear" />
                     Settings
             </div>
         </router-link>  
-        </li> 
 
-        <li>
+</div>
+        <div class="bottom-content">
+            <li>
           <router-link to="/logout" active-class="active" exact tag="button" class="side-btn">
             <div class="link-container"><font-awesome-icon class="icons" icon="fa-solid fa-door-open" />
                     Log out
-            </div>
-        </router-link>  
-        </li> 
-    </div>
+            </div> 
+        </router-link> </li>  
+        </div>
+    
   </div>
 </template>
 
@@ -88,7 +90,7 @@ export default {
        
     }
     .menu-items > *{
-        margin-top: 20px;
+        margin-top: 9px;
         
     }
 
@@ -111,9 +113,10 @@ export default {
         background-color: transparent;
     }
     .side-btn:hover{
-        background: rgba(255, 255, 255, 0.2);
-        margin-left: -20%; color: white;
-        border-left: 5px solid
+         background: rgba(255, 255, 255, 0.2);
+    border-left: 5px solid var(--font-color);
+    color: var(--font-color);
+     margin-left:0%;
         
     }
     nav.logo{
@@ -128,5 +131,43 @@ nav.utensils{
     padding-right: 20px;
     color: white    ;
 }
+.link-container{
+     margin-left: 20%;   
+   height: 100%;
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+   color: #C8E1D8;
+}
+.bottom-content{
+   
+    padding: 1px;
+    position: relative;
+    bottom: -90px;
+    display: flex;
+    text-align: center;
+    justify-content: start;
+}
+.bottom-content li{
+   height: 50px;
+   margin-top: 10px;
+   list-style: none;
+   margin-left: 20px;
+   width: 100%;
+}
+.bottom-content li .link-container{
+     margin-left: 10%;   
+   height: 100%;
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+   color: #C8E1D8;
 
+}
+.bottom-content li:hover{
+    background: rgba(255, 255, 255, 0.2);
+    border-left: 5px solid var(--font-color);
+    color: var(--font-color);
+     margin-left:0%;
+}
 </style>
