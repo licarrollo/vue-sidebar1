@@ -325,7 +325,7 @@ myChart;
    
   grid-area: Sales;
   position: relative;
-  top:23%; 
+  top:15%; 
   display: flex;  
   flex-direction: row;
   justify-content: space-between;
@@ -363,7 +363,7 @@ myChart;
     grid-column: 1;
     grid-row: 1 / span 2 ;
     width: 21%;
-    height: 60%;
+    height: 70%;
     background: var(--primary-color) !important;
     /* display: flex;
     flex-direction: column; */
@@ -410,7 +410,7 @@ myChart;
     grid-column: 2;
     grid-row: 1 / span 2 ;
     width: 21%;
-     height: 60%;
+     height: 70%;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
@@ -451,7 +451,7 @@ myChart;
     grid-column: 3;
     grid-row: 1 / span 2 ;
     width: 21%;
-     height: 60%;
+     height: 70%;
     display: flex;
     flex-direction: column;
     padding: 10%;
@@ -495,7 +495,7 @@ myChart;
   grid-column: 4;
   grid-row: 1 / span 2 ;
   width: 21%;
-   height: 60%;
+   height: 70%;
   display: flex;
   flex-direction: column;
   padding: 10%;
@@ -542,9 +542,11 @@ myChart;
   grid-area: Stats;
 
   border-radius: 15px;
-  height:50%;
+  height:40%;
+  width: 90%;
+  padding-left: 5%;
   position: relative;
-  top:0%
+  top:1%
 
 }
 
@@ -572,7 +574,7 @@ myChart;
 
 .MPItems ul li{
   text-align: left;
-  padding: 14px;
+  padding: 16px;
    border-radius: 10px;
   list-style: none;
     border: none;
@@ -607,7 +609,7 @@ myChart;
     cursor: pointer;
     border-radius: 25px;
     position: absolute;
-    right: 10%;
+    right: 9%;
     top:14%;
     cursor: pointer;
     background: #fff;
