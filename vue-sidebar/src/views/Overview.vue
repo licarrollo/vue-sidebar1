@@ -1,37 +1,36 @@
 <template>
 <!-- header -->
-  <div class="Header">
-    
-            <div class="input-box">
-              
+
+     <div class="Header">
+        <div class="SandP">
+            <div class="input-box">     
                 <input type="text" placeholder="Search...">
-                <span class="search">
-                    <a class="iconsearch"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></a>
-                  <a class="mic"><font-awesome-icon icon="fa-solid fa-microphone" /></a>
-                 
-                </span>
-              
-            </div>
+                    <span class="search">
+                        <a class="iconsearch"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></a>
+                        <a class="mic"><font-awesome-icon icon="fa-solid fa-microphone" /></a>
+                    </span>          
+                 </div>
             <div class="profile">
                 <div class="pic">
-                   <span> <a class="user"><font-awesome-icon icon="fa-solid fa-user" /></a></span>
-                   <!-- <div class="name"> -->
-                   <h5 class="name">Restaurant</h5>
-                   <h4 class="name1">Tonduro</h4>
+                    <span> <a class="user"><font-awesome-icon icon="fa-solid fa-user" /></a></span>             
+                    <h5 class="name">Restaurant</h5>
+                    <h4 class="name1">Tonduro</h4>
                     
-                </div>
-               
+                </div>    
                 <a class="bell"><font-awesome-icon icon="fa-solid fa-bell" /></a>
             </div>
         </div>
+    </div>
 <!-- endheader -->
 
 
-  <div class="Sales">
-<div class="mid">
-    <h2 class="over">Overview</h2>    
-
-    <div class="boxss">
+<!-- Sales -->
+    <div class="Sales">
+        <div class="mid">
+            
+            <h2 class="over">Overview</h2>   
+            
+            <div class="boxss">
                 <select>
                   <option>Today</option>
                   <option>Option 2</option>
@@ -39,37 +38,38 @@
                   <option>Option 4</option>
                   <option>Option 5</option>
                 </select>
-              </div>
-</div>
-<div class="box box1">
-                <div class="one">
-                    <div class="first">
-                        <a class="file"><font-awesome-icon icon="fa-solid fa-file-lines" /></a>
-                        <span>Orders</span>
-                    </div>
+            </div>
+        </div>
+
+        <div class="box box1">
+            <div class="one">
+                <div class="first">
+                    <a class="file"><font-awesome-icon icon="fa-solid fa-file-lines" /></a>
+                    <span>Orders</span>
+                </div>
                 <div class="second">
                     <span>$35,485<small>+2.8</small> </span>
                </div>
                <div class="last">
-                <small>Compared to ($25,450 last year)</small>
+                    <small>Compared to ($25,450 last year)</small>
                </div>
-                </div>   
-            </div>
-            <div class="box box2">
-                <div class="two">
-                    <div class="first">
-                        <a class="chart"><font-awesome-icon icon="fa-solid fa-chart-line" /></a>
-                        <span>Avg. Order Amount</span>
-                   </div>
-                   <div class="second">
+            </div>   
+        </div>
+        <div class="box box2">
+            <div class="two">
+                <div class="first">
+                    <a class="chart"><font-awesome-icon icon="fa-solid fa-chart-line" /></a>
+                    <span>Avg. Order Amount</span>
+                </div>
+                <div class="second">
                     <span>$8,562<small>+2.8</small> </span>
-                   </div>
-                   <div class="last">
+                </div>
+                <div class="last">
                     <small>Compared to ($56,232 last year)</small>
                     </div>
-                </div>                    
-            </div>
-            <div class="box box3">
+            </div>                    
+        </div>
+        <div class="box box3">
                 <div class="three">
                       <div class="first">
                     <a class="users"><font-awesome-icon icon="fa-solid fa-user-group" /></a>
@@ -97,122 +97,149 @@
                     </div>
                 </div>
             </div>
-  </div>
-  <!-- end sales -->
-  
-  <div class="Stats">
-
-        <div class="sel">
-                <span>Sales Analytics</span>
-                <div class="boxs">
-                    <button class="btn" @click="showModal = true"> Modal</button>
-<transition name="fade" appear>
-    <div class="modal-overlay" v-if="showModal" @click="showModal = false"></div>
-</transition>
-<transition name="slide" appear>
-    <div class="modal" v-if="showModal">
-        <h1>Lorem Ipsum</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, veritatis.</p>
-        <button class="button" @click="showModal = false"> Close</button>
     </div>
-</transition>
-                    <select>
-                      <option>This Week</option>
-                      <option>Option 2</option>
-                      <option>Option 3</option>
-                      <option>Option 4</option>
-                      <option>Option 5</option>
-                    </select>
-                  </div>
-                </div>   
-                <div id="my_dataviz"></div>
+<!-- end sales -->
 
-  </div>
-<div class="Popular">
-   <h3 id="most">Most Popular Items</h3>
-                <div class="MPItems">
-                    <ul>
-                        <li>
-                           <a class="iconsearch"><font-awesome-icon icon="fa-solid fa-image" /></a>
-                            
-                                <span>Special Chicken</span>                    
-                        </li>
-                        <br>
-                       <li>
-                        <a class="iconsearch"><font-awesome-icon icon="fa-solid fa-image" /></a>
-                        <span>Chew mein</span>
-                       </li>
-                       <br>
-                       <li>
-                         <a class="iconsearch"><font-awesome-icon icon="fa-solid fa-image" /></a>
-                                <span>BBQ Park</span>
-                       </li>
-                        <br>
-                       <li>
-                         <a class="iconsearch"><font-awesome-icon icon="fa-solid fa-image" /></a>
-                                <span>BBQ Park</span>
-                       </li>
-                        <br>
-                       <li>
-                         <a class="iconsearch"><font-awesome-icon icon="fa-solid fa-image" /></a>
-                                <span>BBQ Park</span>
-                       </li>
-                  
-                     
-                    </ul>
-                </div>
-  </div>
+<!-- Stats -->
+    <div class="Stats">
+        <div class="sel">
+            <span>Sales Analytics</span>
+          <canvas id="myChart" ></canvas>
+
+        </div>   
+        <!-- <div id="my_dataviz"></div> -->
+    </div>
+<!-- End Stats -->
+
+<!-- Popular -->
+    <div class="Popular">
+        <h3 id="most">Most Popular Items</h3>
+        <div class="MPItems">
+            <ul>
+                <li>
+                    <a class="iconsearch"><font-awesome-icon icon="fa-solid fa-image" /></a>       
+                    <span>Special Chicken</span>                    
+                </li>
+                <br>
+                <li>
+                    <a class="iconsearch"><font-awesome-icon icon="fa-solid fa-image" /></a>
+                    <span>Chew mein</span>
+                </li>
+                <br>
+                <li>
+                    <a class="iconsearch"><font-awesome-icon icon="fa-solid fa-image" /></a>
+                    <span>BBQ Park</span>
+                </li>
+                <br>
+                <li>
+                    <a class="iconsearch"><font-awesome-icon icon="fa-solid fa-image" /></a>
+                    <span>BBQ Park</span>
+                </li>
+                <br>
+                <li>
+                    <a class="iconsearch"><font-awesome-icon icon="fa-solid fa-image" /></a>
+                    <span>BBQ Park</span>
+                </li>    
+            </ul>
+        </div>
+    </div>
+<!-- End Popular -->
+
+<!-- Modal -->
+    <button class="btn" @click="showModal = true"> Modal</button>
+    <transition name="fade" appear>
+        <div class="modal-overlay" v-if="showModal" @click="showModal = false"></div>
+    </transition>
+    <transition name="slide" appear>
+        <div class="modal" v-if="showModal">
+            <h1>Lorem Ipsum</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, veritatis.</p>
+            <button class="button" @click="showModal = false"> Close</button>
+        </div>
+    </transition>
+<!-- END MODAL -->
+
 </template>
+<!-- END TEMPLATE -->
 
+<!-- Script -->
 <script>
+import Chart from 'chart.js/auto';
 
- export default {
-    name: 'App',
-    // components: {
-    //   Modal, 
-    // },
-    data() {
-      return {
-    //     isModalVisible: false,
-    //   };
-    // },
-    // methods: {
-    //   showModal() {
-    //     this.isModalVisible = true;
-    //   },
-    //   closeModal() {
-    //     this.isModalVisible = false;
-    //   }
-     showModal: false
-    }
-  }};
+    export default {
+        name: 'App',
+        data() {
+        return {
+        showModal: false
+        }
+        },
+        mounted( ){
+            console.log('component mounted')
+
+            const ctx = document.getElementById('myChart');
+
+
+const labels = ['January','Febrary','March','April','May','June','July'];
+const data = {
+  labels: labels,
+  datasets: [{
+    label: 'My First Dataset',
+    data: [65, 59, 80, 81, 56, 55, 40],
+    fill: false,
+    borderColor: 'rgb(75, 192, 192)',
+    tension: 0.5
+  }]
+};
+
+            const myChart = new Chart (ctx, {
+    type: 'line',
+    data: data,
+
+});
+
+myChart;
+        }
+    };
 </script>
+
+<!-- style -->
 <style>
 
 /*header*/
-.user {
-  color: black;
-}
-.bell{
-  color: black;
-}
 
-.input-box{
+.Header {
+   
+    grid-area: Header;
+    height: 10vh;
+    width: 100%;
+   
+    border-radius: 10px;
     position: relative;
+}
+.SandP{
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    border-radius: 10px;
+
+}
+.input-box{
+    position: absolute;
     height: 55px;
-    top:20px;
-    width: 84%;
+    top:0px;
+    width: 79%;
     margin-right: 30px;
     border-radius: 15px;
-    background-color: var(--font-color);
+   
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
 }
 
 .input-box input {
     position: relative;
-    height: 100%;
-    width: 80%;
-    padding: 0 15px 0 60px ;
+    height: 95%;
+    width: 90%;
+    top: 0;
+    left: 1%;
     outline: none;
     border: none;
     border-radius: 15px;
@@ -220,27 +247,22 @@
     font-weight: 400;
     color: #333;
 
+
 }
 
 .input-box .iconsearch{
     position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 60px;
-    border-radius: 15px;
-    background-color: var(--font-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    left: 1%;
+    top: 20%;
      font-size: 30px;
   color: black;
+   cursor: pointer;
 }
 
 
 .input-box .mic{
     position: absolute;
-  right: 2%;
+  right: 0.5%;
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
@@ -249,8 +271,9 @@
 }
 
 .profile{
-   position: relative;
-   top:18px ;
+   position: absolute;
+   top:0 ;
+   right: 0;
    width:20%;
    height: 55px;
    background: var(--font-color);
@@ -264,7 +287,7 @@
     position: relative;
     height: 55px;
     top:-20px;
-
+    color: red;
 }
 
 .profile .bell{
@@ -272,6 +295,7 @@
     right: 17px;
     top: 15px;
     font-size: 20px;
+    color: red;
 }
 
 .profile .pic .user{
@@ -294,15 +318,56 @@
   color: black;
 }
 /*end-header*/
+
+
+/* SALES */
+.Sales{
+   
+  grid-area: Sales;
+  position: relative;
+  top:23%; 
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20vh;
+}
+.Sales div{
+    padding: 1em;
+    border-radius: 20px;
+}
+/* mid */
+.mid{
+    position: absolute;
+    top:-45%;
+    color: #000;
+    left: 0;
+    width: 79vw;
+    display: flex;
+   height:10vh ;
+}
+.mid .boxss{
+    position: absolute;
+    right: 0;
+    top:20%;
+ 
+}
+.mid .boxss select{
+        border-radius: 10px;
+    padding: 1px;
+    width:80%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+ 
+}
+/* end mid */
 .box1{
-grid-column: 1;
-grid-row: 1 / span 2 ;
-width: 21%;
-height: 80%;
-background: var(--primary-color) !important;
-display: flex;
-flex-direction: column;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+    grid-column: 1;
+    grid-row: 1 / span 2 ;
+    width: 21%;
+    height: 60%;
+    background: var(--primary-color) !important;
+    /* display: flex;
+    flex-direction: column; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
 }
 .box1 .one{
     padding: 0%;
@@ -338,26 +403,14 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
     top: 60px;
     padding-right: 4px;
 }
-.Sales{
-  grid-area: Sales;
-  position: relative;
-  top: 15%; 
-  display: flex;  
-  flex-direction: row;
-  justify-content: space-between;
-  height: 79.9%;
-}
-.Sales div{
-    padding: 1em;
-    border-radius: 20px;
-}
+
 
 
 .box2{
     grid-column: 2;
     grid-row: 1 / span 2 ;
     width: 21%;
-    height: 80%;
+     height: 60%;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
@@ -398,7 +451,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
     grid-column: 3;
     grid-row: 1 / span 2 ;
     width: 21%;
-    height: 80%;
+     height: 60%;
     display: flex;
     flex-direction: column;
     padding: 10%;
@@ -442,7 +495,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
   grid-column: 4;
   grid-row: 1 / span 2 ;
   width: 21%;
-  height: 80%;
+   height: 60%;
   display: flex;
   flex-direction: column;
   padding: 10%;
@@ -481,68 +534,30 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
 .box4 .last{
     color:#000;
 }
-.mid{
-    position: absolute;
-    top:-62%;
-    color: #000;
-    left: 0;
-    width: 79vw;
-    display: flex;
-   
-}
-.mid .boxss{
-    position: absolute;
-    right: 0;
-    top:20%;
- 
-}
-.mid .boxss select{
-        border-radius: 10px;
-    padding: 1px;
-    width:80%;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
- 
-}
-.line {
-    fill: none;
-    stroke: #ffab00;
-    stroke-width: 3;
-}
 
-/* Style the dots by assigning a fill and stroke */
-.dot {
-    fill: #ffab00;
-    stroke: #fff;
-}
+/* end of salas */
 
-
-.Header {
-  padding: 0;
-  height: 100%;
-  grid-area: Header;
-    top: 0px;
-    left: 0px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  
-}
-
+/* stats */
 .Stats {
   grid-area: Stats;
-  background: gray;
-  border-radius: 10px;
-  height:23rem;
-  top:20%
+
+  border-radius: 15px;
+  height:50%;
+  position: relative;
+  top:0%
 
 }
+
+/* end stats */
 .Popular {
   grid-area: Popular;
-     background:rgb(243,246,248);
   border-radius: 10px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-   color: black;
-    height:10rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  color: black;
+  height:50%;
+  position: relative;
+  top:0%;
+
 }
 #most{
   margin: 0;
@@ -550,8 +565,8 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
 }
 
 .MPItems ul{
-  
-     padding-left: 0;
+  height: 20vh;
+     padding:  0 10px 0 10px;
     margin: 2px 0 2px 0;
 }
 
@@ -570,7 +585,9 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
 .MPItems ul li:hover{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2) 
 }
+/* end popular */
 
+/* modal */
 .modal{
     position: fixed;
     top:50%;
@@ -589,11 +606,11 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
     border: 1px solid black;
     cursor: pointer;
     border-radius: 25px;
-    float: right;
     position: absolute;
-    right: 8%;
-    top:15.4%;
+    right: 10%;
+    top:14%;
     cursor: pointer;
+    background: #fff;
    
 }
 .modal-overlay{
@@ -604,7 +621,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
     bottom: 0;
     z-index:98;
     height: 100vh;
-    background: rgba(0, 0, 0, .3);
+     background: rgba(0 , 0  , 0, 0.5);
 }
 .fade-enter-active,
 .fade-leave-active {

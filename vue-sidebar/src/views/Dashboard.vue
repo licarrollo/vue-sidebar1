@@ -1,5 +1,8 @@
 <template>
   <div class="dashboard">
+
+
+    
     <Sidebar/>
     <div class="content"> 
       <div class="wrapper">
@@ -46,13 +49,13 @@ export default {
   height: 97vh;
   border-radius: 20px;
     display: grid;
-grid-auto-rows: minmax(100px, auto);
+
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: 1fr 1fr 1fr 5fr 5fr 5fr;
+ 
   grid-gap:1em;
+
     grid-template-areas: 
-  " Header Header Header Header"
-  "mid mid mid mid "
+  " Header Header Header Header"  
   "Sales Sales Sales Sales "
   " Stats Stats Stats Popular"
   " Stats Stats  Stats Popular"
