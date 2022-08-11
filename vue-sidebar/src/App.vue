@@ -7,7 +7,19 @@
  
 
 </template>
-
+<script>  
+  export default{
+    beforeCreate(){
+      alert('Access Dashboard?');
+    },
+    // created(){
+    //   alert('created');
+    // },
+    // beforeMount(){
+    //   alert('beforeMount');
+    // }
+  }
+</script>
 
 <style>
 
